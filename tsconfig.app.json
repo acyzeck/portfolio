@@ -27,5 +27,9 @@
         "noFallthroughCasesInSwitch": true,
         "noUncheckedSideEffectImports": true
     },
-    "include": ["src"]
+    "include": [
+        "src",
+        "public/dillionverma-portfolio-6ab0cf8/dillionverma-portfolio-6ab0cf8/src/components/magicui/blur-fade-text.tsx",
+        "public/dillionverma-portfolio-6ab0cf8/dillionverma-portfolio-6ab0cf8/src/components/magicui/blur-fade.tsx"
+    ]
 }
