@@ -2,16 +2,16 @@ import { useTheme } from '@/context/ThemeContext';
 import { motion } from 'framer-motion';
 import { DATA } from '@/data/resume';
 import Markdown from 'markdown-to-jsx';
-import Experience from '@/components/Experience';
-import Contact from '@/components/Contact';
+import Experience from '@/components/Sections/Experience';
+import Contact from '@/components/Sections/Contact';
 import { useEffect } from 'react';
 import { blurFade } from '@/components/ui/blur-fade';
 import ProjectCard from '@/components/project-card';
 import { Link } from 'react-router-dom';
+import ImageGrid from '@/components/Sections/Photos';
 
 const HomePage = () => {
     const { isDark } = useTheme();
-
     useEffect(() => {
         document.title = DATA.name;
         const description = document.querySelector('meta[name="description"]');
@@ -96,12 +96,22 @@ const HomePage = () => {
                     </span>
                 </motion.section>
 
-                {/* Experience Section */}
+                {/* Photos Section */}
                 <motion.section
                     className="text-center sm:text-left flex justify-center"
                     initial="initial"
                     animate="animate"
                     variants={blurFade(0.6)}
+                    id="experience"
+                >
+                    <ImageGrid />
+                </motion.section>
+                {/* Experience Section */}
+                <motion.section
+                    className="text-center sm:text-left flex justify-center"
+                    initial="initial"
+                    animate="animate"
+                    variants={blurFade(0.8)}
                     id="experience"
                 >
                     <Experience />
@@ -112,7 +122,7 @@ const HomePage = () => {
                     className="flex flex-col gap-8 w-full"
                     initial="initial"
                     animate="animate"
-                    variants={blurFade(0.8)}
+                    variants={blurFade(1)}
                     id="projects"
                 >
                     <div className="flex flex-col items-center gap-4 w-full">
@@ -154,7 +164,7 @@ const HomePage = () => {
                     className="text-center sm:text-left flex justify-center"
                     initial="initial"
                     animate="animate"
-                    variants={blurFade(1)}
+                    variants={blurFade(1.2)}
                     id="projects"
                 >
                     <Contact />

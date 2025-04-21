@@ -1,7 +1,7 @@
 import { DATA } from '@/data/resume';
 import ProjectCard from '@/components/project-card';
 import { motion } from 'framer-motion';
-import Contact from '@/components/Contact';
+import Contact from '@/components/Sections/Contact';
 import { blurFade } from '@/components/ui/blur-fade';
 
 const ProjectsPage = () => {
