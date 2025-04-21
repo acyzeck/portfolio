@@ -3,12 +3,15 @@ import { Navbar } from '@/components/Navbar';
 
 export default function RootLayout() {
     return (
-        <div className="flex">
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-full">
-                <Navbar />
-            </div>
-            <div className="flex-1 min-h-screen bg-zinc-100 dark:bg-zinc-900">
+        <div className="min-h-screen bg-zinc-50 dark:bg-zinc-900 pt-4 pb-16">
+            {/* Main Content */}
+            <div className="min-h-screen">
                 <Outlet />
+            </div>
+
+            {/* Fixed Navbar at bottom */}
+            <div>
+                <Navbar />
             </div>
         </div>
     );
