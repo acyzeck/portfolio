@@ -1,5 +1,5 @@
 import { Icons } from '@/components/icons';
-import { HomeIcon, ChevronsLeftRightIcon } from 'lucide-react';
+import { HomeIcon, ChevronsLeftRightIcon, NotebookPenIcon } from 'lucide-react';
 
 export const DATA = {
     name: 'Clark Walrath',
@@ -28,6 +28,7 @@ export const DATA = {
     navbar: [
         { href: '/', icon: HomeIcon, label: 'Home' },
         { href: '/projects', icon: ChevronsLeftRightIcon, label: 'Projects' },
+        { href: '/blog', icon: NotebookPenIcon, label: 'Blog' },
     ],
     contact: {
         email: '44walrath@gmail.com',
@@ -114,6 +115,52 @@ export const DATA = {
         },
     ],
     projects: [
+        {
+            title: 'Clay Games',
+            href: 'https://github.com/itscl4rk/Clay-Games',
+            active: true,
+            description:
+                'Inspired by [neal.fun](https://neal.fun), Clay Games is a playful collection of web-based mini-games built to entertain, educate, and experiment with creative interactions—all in one simple, fun hub.',
+            technologies: [
+                'React',
+                'Typescript',
+                'TailwindCSS',
+                'Vite',
+                'Framer Motion',
+            ],
+            links: [
+                {
+                    type: 'Github',
+                    href: 'https://github.com/itscl4rk/Clay-Games',
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: '/projects/imgs/claygames.png',
+            video: '',
+        },
+        {
+            title: 'Clay Games',
+            href: 'https://github.com/itscl4rk/Clay-Games',
+            active: true,
+            description:
+                'Inspired by [neal.fun](https://neal.fun), Clay Games is a playful collection of web-based mini-games built to entertain, educate, and experiment with creative interactions—all in one simple, fun hub.',
+            technologies: [
+                'React',
+                'Typescript',
+                'TailwindCSS',
+                'Vite',
+                'Framer Motion',
+            ],
+            links: [
+                {
+                    type: 'Github',
+                    href: 'https://github.com/itscl4rk/Clay-Games',
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: '/projects/imgs/claygames.png',
+            video: '',
+        },
         {
             title: 'Clay Games',
             href: 'https://github.com/itscl4rk/Clay-Games',

@@ -1,7 +1,6 @@
 import { DATA } from '@/data/resume';
 import ProjectCard from '@/components/project-card';
 import { motion } from 'framer-motion';
-import Contact from '@/components/Sections/Contact';
 import { blurFade } from '@/components/ui/blur-fade';
 
 const ProjectsPage = () => {
@@ -16,16 +15,21 @@ const ProjectsPage = () => {
     };
 
     return (
-        <div className="max-w-7xl mx-auto px-6 py-16 sm:px-8 lg:px-12">
+        <div>
             {/* Header */}
+            <motion.div className="flex flex-col items-center w-full justify-center">
+                <span className="text-sm dark:text-zinc-800 text-zinc-200 bg-zinc-800 dark:bg-zinc-200 py-1 px-3 rounded-md w-fit">
+                    projects
+                </span>
+            </motion.div>
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className="mb-16 text-center"
             >
-                <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100">
-                    My Projects
+                <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-100 mt-10">
+                    i like to build things
                 </h1>
                 <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400 max-w-xl mx-auto">
                     A collection of work I’m proud of — from full-stack apps to
@@ -38,7 +42,7 @@ const ProjectsPage = () => {
                 variants={containerVariants}
                 initial="hidden"
                 animate="show"
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+                className="grid grid-cols-1 sm:grid-cols-2 w-[700px] mx-auto space-y-6"
             >
                 {DATA.projects.map((project, index) => (
                     <motion.div
@@ -60,17 +64,6 @@ const ProjectsPage = () => {
                     </motion.div>
                 ))}
             </motion.div>
-
-            {/* Contact Section */}
-            <motion.section
-                className="text-center sm:text-left flex justify-center"
-                initial="initial"
-                animate="animate"
-                variants={blurFade(0.5)}
-                id="projects"
-            >
-                <Contact />
-            </motion.section>
         </div>
     );
 };
