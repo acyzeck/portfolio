@@ -18,7 +18,7 @@ const ProjectsPage = () => {
         <div>
             {/* Header */}
             <motion.div className="flex flex-col items-center w-full justify-center">
-                <span className="text-sm dark:text-zinc-800 text-zinc-200 bg-zinc-800 dark:bg-zinc-200 py-1 px-3 rounded-md w-fit">
+                <span className="text-sm dark:text-zinc-800 mt-10 text-zinc-200 bg-zinc-800 dark:bg-zinc-200 py-1 px-3 rounded-md w-fit">
                     projects
                 </span>
             </motion.div>

@@ -7,7 +7,7 @@ const BlogPage = () => {
     return (
         <div className="max-w-4xl mx-auto px-6 py-10 sm:px-8 lg:px-12">
             <div className="flex flex-col items-center w-full mb-8">
-                <span className="text-sm font-semibold dark:text-zinc-800 text-zinc-200 bg-zinc-800 dark:bg-zinc-200 py-1 px-4 rounded-lg shadow-md transition-colors">
+                <span className="text-sm dark:text-zinc-800 text-zinc-200 bg-zinc-800 dark:bg-zinc-200 py-1 px-4 rounded-lg shadow-md transition-colors">
                     blog
                 </span>
             </div>
