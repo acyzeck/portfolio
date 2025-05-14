@@ -42,17 +42,12 @@ const ProjectsPage = () => {
                 variants={containerVariants}
                 initial="hidden"
                 animate="show"
-                className="grid grid-cols-1 sm:grid-cols-2 w-[700px] mx-auto space-y-6"
+                className="w-full flex flex-col items-center justify-center"
             >
-                {DATA.projects.map((project, index) => (
-                    <motion.div
-                        key={`project-${index}`}
-                        initial="initial"
-                        animate="animate"
-                        variants={blurFade(index * 0.3)}
-                        className="transition-transform duration-300"
-                    >
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-x-25 gap-y-3 mt-8 justify-items-center w-[700px]">
+                    {DATA.projects.slice(0, 4).map((project, index) => (
                         <ProjectCard
+                            key={`project-${index}`}
                             title={project.title}
                             description={project.description}
                             technologies={project.technologies}
@@ -61,8 +56,8 @@ const ProjectsPage = () => {
                             image={project.image}
                             video={project.video}
                         />
-                    </motion.div>
-                ))}
+                    ))}
+                </div>
             </motion.div>
         </div>
     );

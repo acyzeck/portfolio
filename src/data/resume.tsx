@@ -139,11 +139,11 @@ export const DATA = {
             video: '',
         },
         {
-            title: 'Clay Games',
-            href: 'https://github.com/itscl4rk/Clay-Games',
+            title: 'Banana Brains',
+            href: 'https://github.com/itscl4rk/banana-brains',
             active: true,
             description:
-                'Inspired by [neal.fun](https://neal.fun), Clay Games is a playful collection of web-based mini-games built to entertain, educate, and experiment with creative interactions—all in one simple, fun hub.',
+                'Banana Brains is a quiz website based on monkeys to bring a fun education experience',
             technologies: [
                 'React',
                 'Typescript',
@@ -154,35 +154,12 @@ export const DATA = {
             links: [
                 {
                     type: 'Github',
-                    href: 'https://github.com/itscl4rk/Clay-Games',
+                    href: 'https://github.com/itscl4rk/banana-brains',
                     icon: <Icons.github className="size-3" />,
                 },
             ],
-            image: '/projects/imgs/claygames.png',
-            video: '',
-        },
-        {
-            title: 'Clay Games',
-            href: 'https://github.com/itscl4rk/Clay-Games',
-            active: true,
-            description:
-                'Inspired by [neal.fun](https://neal.fun), Clay Games is a playful collection of web-based mini-games built to entertain, educate, and experiment with creative interactions—all in one simple, fun hub.',
-            technologies: [
-                'React',
-                'Typescript',
-                'TailwindCSS',
-                'Vite',
-                'Framer Motion',
-            ],
-            links: [
-                {
-                    type: 'Github',
-                    href: 'https://github.com/itscl4rk/Clay-Games',
-                    icon: <Icons.github className="size-3" />,
-                },
-            ],
-            image: '/projects/imgs/claygames.png',
-            video: '',
+            image: '',
+            video: 'https://files.catbox.moe/bngcl8.mp4',
         },
     ],
 } as const;

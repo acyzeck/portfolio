@@ -34,7 +34,7 @@ const ProjectCard = ({
             className="cursor-pointer w-80 bg-white dark:bg-zinc-900 rounded-xl shadow-md hover:shadow-lg transition-all hover:scale-[1.02] border border-zinc-200 dark:border-zinc-800 flex flex-col overflow-hidden"
         >
             {(image || video) && (
-                <div className="flex-1 w-full flex items-center justify-center overflow-hidden">
+                <div className="w-full h-44 flex items-center justify-center overflow-hidden">
                     {image && (
                         <img
                             src={image}
